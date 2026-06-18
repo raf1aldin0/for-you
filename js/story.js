@@ -266,7 +266,7 @@ const places = [
 name:"Gunung Gede",
 lat:-6.770,
 lng:106.980,
-image:"../assets/images/gede1.jpeg",
+image:"assets/images/gede1.jpeg",
 desc:"Start Perjalanan",
 maps:"https://maps.google.com/?q=Gunung+Gede"
 },
@@ -275,7 +275,7 @@ maps:"https://maps.google.com/?q=Gunung+Gede"
 name:"IKEA Alam Sutera",
 lat:-6.241,
 lng:106.657,
-image:"../assets/images/ik1.jpeg",
+image:"assets/images/ik1.jpeg",
 desc:"Date pertama yang sederhana namun berkesan.",
 maps:"https://maps.google.com/?q=IKEA+Alam+Sutera"
 },
@@ -284,7 +284,7 @@ maps:"https://maps.google.com/?q=IKEA+Alam+Sutera"
 name:"Blok M",
 lat:-6.244,
 lng:106.799,
-image:"../assets/images/bm.jpeg",
+image:"assets/images/bm.jpeg",
 desc:"Explore & Menikmati bersama",
 maps:"https://maps.google.com/?q=Blok+M"
 },
@@ -293,7 +293,7 @@ maps:"https://maps.google.com/?q=Blok+M"
 name:"Yogjakarta",
 lat:-7.792,
 lng:110.365,
-image:"../assets/images/mcoklat.jpeg",
+image:"assets/images/mcoklat.jpeg",
 desc:"Liburan jauh pertama yang tak terlupakan.",
 maps:"https://maps.google.com/?q=Malioboro"
 },
@@ -302,7 +302,7 @@ maps:"https://maps.google.com/?q=Malioboro"
 name:"Pantai Goa Cemara",
 lat:-7.995,
 lng:110.243,
-image:"../assets/images/jjj.jpeg",
+image:"assets/images/jjj.jpeg",
 desc:"Menerbangkan harapan dan keinginan",
 maps:"https://maps.google.com/?q=Pantai+Goa+Cemara"
 },
@@ -311,7 +311,7 @@ maps:"https://maps.google.com/?q=Pantai+Goa+Cemara"
 name:"Gunung Prau",
 lat:-7.185,
 lng:109.925,
-image:"../assets/images/pr1.jpeg",
+image:"assets/images/pr1.jpeg",
 desc:"Pendakian penuh cerita",
 maps:"https://maps.google.com/?q=Gunung+Prau"
 },
@@ -320,7 +320,7 @@ maps:"https://maps.google.com/?q=Gunung+Prau"
 name:"Tree Top Bogor",
 lat:-6.654,
 lng:106.903,
-image:"../assets/images/zz1.jpeg",
+image:"assets/images/zz1.jpeg",
 desc:"Melepas penat bersama",
 maps:"https://maps.google.com/?q=TreeTop+Adventure+Park+Bogor"
 },
@@ -329,7 +329,7 @@ maps:"https://maps.google.com/?q=TreeTop+Adventure+Park+Bogor"
 name:"Enchanting Valley",
 lat:-6.638,
 lng:106.935,
-image:"../assets/images/couple-bg.jpg",
+image:"assets/images/couple-bg.jpg",
 desc:"Tempat yang seru bersama kamu",
 maps:"https://maps.google.com/?q=Enchanting+Valley+Bogor"
 }
