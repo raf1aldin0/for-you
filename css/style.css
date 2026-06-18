@@ -1,0 +1,477 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,
+body{
+width:100%;
+min-height:100vh;
+overflow-x:hidden;
+overflow-y:auto;
+font-family:'Montserrat',sans-serif;
+background:#000;
+}
+
+.background{
+    position:fixed;
+    inset:0;
+
+    background:url('../assets/images/couple-bg.jpg') center center/cover no-repeat;
+
+filter:
+blur(3px)
+brightness(.35);
+
+transform:scale(1.05);
+
+z-index:0;
+}
+
+.glass-card{
+    position:relative;
+    z-index:10;
+}
+
+.music-btn{
+    z-index:20;
+}
+
+.hunt-item{
+    z-index:20;
+}
+
+.overlay{
+
+position:fixed;
+inset:0;
+
+background:
+linear-gradient(
+180deg,
+rgba(0,0,0,.35),
+rgba(0,0,0,.85)
+);
+
+z-index:1;
+}
+
+.music-btn{
+
+position:fixed;
+
+top:25px;
+right:25px;
+
+z-index:999;
+
+padding:14px 24px;
+
+border-radius:50px;
+
+border:1px solid rgba(255,255,255,.1);
+
+background:
+rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+color:white;
+
+cursor:pointer;
+
+transition:.4s;
+}
+
+.music-btn:hover{
+
+transform:translateY(-4px);
+}
+
+.glass-card{
+
+position:relative;
+
+z-index:10;
+
+margin:80px auto;
+
+width:92%;
+
+max-width:1150px;
+
+padding:90px 90px;
+
+text-align:center;
+
+background:
+rgba(255,255,255,.05);
+
+backdrop-filter:blur(25px);
+
+border:
+1px solid rgba(255,228,181,.20);
+
+border-radius:40px;
+
+box-shadow:
+0 30px 60px rgba(0,0,0,.45);
+
+overflow:hidden;
+}
+
+.small-title{
+
+display:block;
+
+letter-spacing:8px;
+
+font-size:13px;
+
+color:#d4af37;
+
+margin-bottom:25px;
+}
+
+.rose-center{
+
+font-size:55px;
+
+margin-bottom:25px;
+
+animation:
+floatRose 4s infinite ease-in-out;
+}
+
+@keyframes floatRose{
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+.glass-card h1{
+
+    font-family:
+    'Great Vibes',
+    cursive;
+
+    font-size:
+    clamp(3rem,5vw,5.5rem);
+
+    line-height:1.45;
+
+    font-weight:400;
+
+    color:#ffe4c4;
+
+    text-shadow:
+    0 0 15px rgba(255,220,180,.35);
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto;
+
+    letter-spacing:0;
+}
+
+.subtitle{
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+font-size:28px;
+
+line-height:1.8;
+
+color:
+rgba(255,240,220,.9);
+
+max-width:700px;
+
+margin:35px auto;
+}
+
+#startBtn{
+
+padding:
+18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+font-weight:600;
+
+background:
+linear-gradient(
+135deg,
+#7a1f1f,
+#d4af37
+);
+
+color:white;
+
+transition:.4s;
+}
+
+#startBtn:hover{
+
+transform:
+translateY(-5px);
+
+box-shadow:
+0 15px 40px rgba(212,175,55,.3);
+}
+
+.secret-hint{
+
+margin-top:25px;
+
+font-size:15px;
+
+line-height:1.8;
+
+color:
+rgba(255,255,255,.8);
+
+opacity:0;
+
+transform:
+translateY(20px);
+
+transition:
+1.5s ease;
+}
+
+.secret-hint.show{
+
+opacity:1;
+
+transform:
+translateY(0);
+}
+
+/* FLOATING ICONS */
+
+.hunt-item{
+
+position:fixed;
+
+font-size:30px;
+
+cursor:pointer;
+
+z-index:50;
+
+animation:
+floating 5s infinite ease-in-out;
+}
+
+@keyframes floating{
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+.hunt-item:nth-child(1){
+left:6%;
+top:15%;
+}
+
+.hunt-item:nth-child(2){
+left:12%;
+bottom:18%;
+}
+
+.hunt-item:nth-child(3){
+right:10%;
+top:25%;
+}
+
+.hunt-item:nth-child(4){
+right:15%;
+bottom:20%;
+}
+
+.hunt-item:nth-child(5){
+left:20%;
+top:35%;
+}
+
+.hunt-item:nth-child(6){
+right:20%;
+top:60%;
+}
+
+.hunt-item:nth-child(7){
+left:8%;
+top:65%;
+}
+
+.secret{
+
+top:78%;
+right:6%;
+
+opacity:0;
+}
+
+/* POPUP */
+
+#popup{
+
+display:none;
+
+position:fixed;
+
+inset:0;
+
+justify-content:center;
+align-items:center;
+
+background:
+rgba(0,0,0,.75);
+
+z-index:9999;
+}
+
+.popup-card{
+
+width:90%;
+max-width:450px;
+
+padding:35px;
+
+border-radius:25px;
+
+background:
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+text-align:center;
+
+color:white;
+}
+
+.popup-card h2{
+
+margin-bottom:15px;
+}
+
+.popup-card p{
+
+line-height:1.8;
+
+margin-bottom:20px;
+}
+
+#popupClose{
+
+padding:
+12px 25px;
+
+border:none;
+
+border-radius:30px;
+
+background:
+linear-gradient(
+135deg,
+#7a1f1f,
+#d4af37
+);
+
+color:white;
+
+cursor:pointer;
+}
+
+#typewriter{
+
+min-height:170px;
+
+white-space:pre-line;
+}
+
+/* ROSE PETALS */
+
+.petal{
+
+position:fixed;
+
+top:-50px;
+
+pointer-events:none;
+
+font-size:22px;
+
+animation:
+fall linear forwards;
+}
+
+@keyframes fall{
+
+0%{
+transform:
+translateY(0)
+rotate(0deg);
+}
+
+100%{
+transform:
+translateY(120vh)
+rotate(360deg);
+opacity:0;
+}
+
+}
+
+@media(max-width:768px){
+
+.glass-card{
+
+padding:35px 25px;
+}
+
+.subtitle{
+
+font-size:15px;
+}
+
+.music-btn{
+
+top:15px;
+right:15px;
+}
+
+.glass-card::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+linear-gradient(
+135deg,
+rgba(255,215,150,.05),
+transparent,
+rgba(255,215,150,.05)
+);
+
+pointer-events:none;
+}
+
+}
