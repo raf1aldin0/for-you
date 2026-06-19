@@ -329,7 +329,7 @@ maps:"https://maps.google.com/?q=TreeTop+Adventure+Park+Bogor"
 name:"Enchanting Valley",
 lat:-6.638,
 lng:106.935,
-image:"assets/images/couple-bg.JPG",
+image:"assets/images/couple-bg.jpeg",
 desc:"Tempat yang seru bersama kamu",
 maps:"https://maps.google.com/?q=Enchanting+Valley+Bogor"
 }

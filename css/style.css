@@ -18,7 +18,7 @@ background:#000;
     position:fixed;
     inset:0;
 
-    background:url('../assets/images/couple-bg.JPG') center center/cover no-repeat;
+    background:url("assets/images/couple-bg.jpeg") center center/cover no-repeat;
 
 filter:
 blur(3px)
